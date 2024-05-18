@@ -1,0 +1,263 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: auto;
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+body{
+    background-image: url(photo/design.png);
+}
+
+.contenar{
+    width: 100%;
+    height: 79vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.head{
+    width: 26%;
+    height: 100%;
+    margin-top: 60px;
+}
+
+.head img{
+    height: 20%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.contenar .head .b{
+    background-color: #f0f0f0c9;
+    width: 100%;
+    /* height: 70vh; */
+    border-radius: 10px;
+    margin-top: -30px;
+    /* height: 56vh; */
+    height: auto;
+}
+
+.contenar .head .b h1,h2{
+    text-align: center;
+}
+
+.contenar .head .b h1{
+    padding-top: 40px;
+}
+
+.contenar .head .b h2{
+    padding: 7px;
+    width: 30%;
+    background-color: #dfdfdfe5;
+    border-radius: 10px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.contenar .head .b .a{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+
+.contenar .head .b a img{
+    height: 40px;
+    padding: 10px;
+}
+
+.contenar .head .b a:hover{
+    transform: scale(1.1);
+}
+
+.contenar .head .b .co{
+    background-color: rgba(238, 247, 255, 0.548);
+    width: 90%;
+    margin: 17px auto;
+    position: relative;
+    border-radius: 10px;
+}
+
+.contenar .head .b .co i{
+    display: flex;
+    padding: 10px;
+    font-size: 14px;
+}
+
+
+
+.fa-map-location:before, .fa-map-marked:before {
+    content: "\f59f";
+    margin:0 10px;
+}
+
+.fa-calendar-alt:before, .fa-calendar-days:before {
+    content: "\f073";
+    margin:0 10px;
+}
+
+.contenar .head .b .co h4{
+    text-align: center;
+}
+
+.contenar .head .b button{
+    background-color: #6305a7;
+    border: none;
+    padding: 17px;
+    display: flex;
+    margin: 17px auto;
+    position: relative;
+    border-radius: 4px;
+}
+
+.contenar .head .b button a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.contenar .head .b button:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+.contenar .side{
+    width: 60%;
+    height: 80vh;
+    margin-top: 60px;
+}
+
+.contenar .side .about{
+    margin: 0 auto;
+    padding: 16px;
+    background-color: #f0f0f063;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.contenar .skills{
+    margin: 40px auto;
+    height: 44vh;
+    padding: 16px;
+    background-color: #f0f0f04b;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contenar .skills h1{
+    margin: 20px ;
+}
+
+.contenar .skills h1::first-letter{
+    font-size: 40px;
+    color: #d30505;
+}
+
+.contenar .skills .sk-ph{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contenar .skills .sk-ph img{
+    padding: 7px;
+    margin: 10px;
+    height: 70px;
+}
+
+.contenar .skills .sk-ph img:hover{
+    transform: scale(1.1);
+    box-shadow: 10px 10px 10px #6305a7 ;
+}
+
+
+.slide img {
+    display: inline;
+    margin: 10px;
+    height: 70px;
+}
+
+
+@media (max-width:400px) {
+    .contenar .head .b h1,h2{
+        font-size: 18px;
+    }
+
+    .contenar .head .b h2 {
+        width: 80%;
+        background-color: #ffffff00;
+        font-size: 16px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    /* .contenar .head .b {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        height: 64vh;
+    } */
+
+    .contenar .head .b .co i,h4{
+        font-size: 12px;
+        padding-left: 0;
+    }
+
+    .contenar .skills {
+        margin: 40px auto;
+        height: auto;
+        padding: 16px;
+        background-color: #f0f0f04b;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .slide {
+        display:none;
+    }
+
+}
+
+@media (min-width:401px) and (max-width:1049px) {
+    .contenar .skills {
+        margin: 40px auto;
+        height: auto;
+        padding: 16px;
+        background-color: #f0f0f04b;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .slide {
+        display:none;
+    }
+}
+
+@media (width:1050px) {
+    /* .contenar .head .b h2 {
+        padding: 7px;
+        width: 60%;
+        background-color: #dfdfdfe5;
+        border-radius: 10px;
+        margin: 0 auto;
+        position: relative;
+    } */
+    .contenar .skills {
+        margin: 40px auto;
+        height: auto;
+        padding: 16px;
+        background-color: #f0f0f04b;
+        border-radius: 10px;
+        text-align: center;
+    }
+}
